@@ -1,4 +1,3 @@
-mysql -u root -p root 
 use  onlinerechargeportal;
 select * from mobile_recharge;
 select * from mobileno_details;
@@ -10,4 +9,5 @@ DELETE FROM mobileno_details WHERE mobile_no = '8975633012';
 DELETE FROM recharge_plan_details WHERE plan_validity = '3_Months';
 DELETE FROM operator_details WHERE operator_name = 'BSNL';
 DELETE FROM user_details WHERE full_name = 'Pratham Pohokar';
-
+update user_details set email='hardik.kotangale@gmail.com' where user_id=4;
+update user_details set full_name='hardik kotangale' where user_id=4;
